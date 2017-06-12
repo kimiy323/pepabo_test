@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+/*==========================================
+ body
+===========================================*/
+body {
+    font-family: 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', Arial, Helvetica;
+    min-width: 600px;
+    padding-top: 20px;
+    margin: 0;
+    padding: 0;
+}
+.tab {
+    float: right;
+    list-style: none;
+    margin: 20px 20px 0 0;
+}
+.tab li {
+    float: left;
+    margin-right: 16px;
+    list-style: none;
+    height: 44px;
+    line-height: 42px;
+    padding: 0 20px;
+    color: #ababab;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    background: #eee;
+    border: solid 1px #ddd;
+    border-radius: 3px 3px 0 0 / 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0 / 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0 / 3px 3px 0 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.tab li:hover {
+    background: #fbfbfb;
+}
+.tab li.active {
+    position: relative;
+    background: #fafafa;
+    color: #828282;
+    border-bottom: 1px solid #fafafa;
+    z-index: 10;
+}
+.tabContent {
+    position: absolute;
+    display: none;
+    min-width: 600px;
+    width: 100%;
+    height: 150px;
+    top: 65px;
+    left: 0;
+    background: #fafafa;
+    border-top: solid 1px #ddd;
+    z-index: 0;
+    transition: opacity 0.2s;
+
+}
+.active {
+    display: block;
+}
